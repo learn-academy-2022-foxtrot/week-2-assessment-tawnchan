@@ -90,26 +90,38 @@ const object1 = { number: 15 }
 // Expected output: "15 is divisible by three"
 
 // describe the name of the function and structure the the test.
-describe("divisableBy3", () => {
+describe("divideBy3", () => {
     // describe what the function will do
-    it(`takes in an object and returns "yes" if the value is divisable by 3, and "no" if it is not divisible by 3`, () => {
+    it(`takes in an object and returns "15 is divisible by 3" if the value is divisable by 3, and "15 is not divisible by three" if it is not divisible by 3`, () => {
     //expect the function and pass in the argument .toEqual the output we are looking for.
-      expect(divisibleBy3(object1)).toEqual(`${number} is divisible by three`)
+      expect(divideBy3(object1)).toEqual(`${number} is divisible by three`)
+    })
+  })
+// output: ReferenceError: divideBy3 is not defined
+
+const object2 = { number: 0 }
+// // // Expected output: "0 is divisible by three"
+
+describe("divideBy3", () => {
+    // describe what the function will do
+    it(`takes in an object and returns "15 is divisible by 3" if the value is divisable by 3, and "15 is not divisible by three" if it is not divisible by 3`, () => {
+    //expect the function and pass in the argument .toEqual the output we are looking for.
+      expect(divideBy3(object2)).toEqual(`${number} is divisible by three`)
     })
   })
 
-
-
-
-
-// const object2 = { number: 0 }
-// // Expected output: "0 is divisible by three"
-
-// const object3 = { number: -7 }
+const object3 = { number: -7 }
 // // Expected output: "-7 is not divisible by three"
 
-// // b) Create the function that makes the test pass.
+describe("divideBy3", () => {
+    // describe what the function will do
+    it(`takes in an object and returns "15 is divisible by 3" if the value is divisable by 3, and "15 is not divisible by three" if it is not divisible by 3`, () => {
+    //expect the function and pass in the argument .toEqual the output we are looking for.
+      expect(divideBy3(object3)).toEqual(`${number} is NOT divisible by three`)
+    })
+  })
 
+// // b) Create the function that makes the test pass.
 
 
 
@@ -118,12 +130,35 @@ describe("divisableBy3", () => {
 
 // // a) Create a test with expect statements for each of the variables provided.
 
-// const randomNouns1 = ["streetlamp", "potato", "teeth", "conclusion", "nephew"]
+const randomNouns1 = ["streetlamp", "potato", "teeth", "conclusion", "nephew"]
 // // Expected output: ["Streetlamp", "Potato", "Teeth", "Conclusion", "Nephew"]
-// const randomNouns2 = ["temperature", "database", "chopsticks", "mango"]
+
+describe("captalize", () => {
+    it(`We will take in an array of words and return an array with all the words capitalized`, () => {
+      expect(capitalized).toEqual(["Streetlamp", "Potato", "Teeth", "Conclusion", "Nephew"])
+    })
+  })
+
+const randomNouns2 = ["temperature", "database", "chopsticks", "mango"]
 // // Expected output: ["Temperature", "Database", "Chopsticks", "Mango"]
 
+describe("captalize", () => {
+    it(`We will take in an array of words and return an array with all the words capitalized`, () => {
+      expect(capitalize).toEqual(["Temperature", "Database", "Chopsticks", "Mango"])
+    })
+  })
+
 // // b) Create the function that makes the test pass.
+
+const capitalize = (array) => {
+    // declare a new variable and assign it an empty array to hold the result. Must be outside of the loop to be accessible by the return
+    let newArray = []
+    for(let i=0; i<array.length; i++) {
+        // push each value into new array
+        newArray.push(array.toUpperCase())
+    }
+    return newArray  
+}
 
 // // --------------------3) Create a function that takes in a string and logs the index of the first vowel.
 
