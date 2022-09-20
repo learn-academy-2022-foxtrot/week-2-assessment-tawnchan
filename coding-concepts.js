@@ -109,6 +109,11 @@ const learnStudent = new Learn("George")
 console.log(learnStudent)
 
 // a) Your answer:
-  //  There is a class called Learn with the keys: student, cohort, year. and the values: name, "Foxtrot", and 2022. 
+  //  There is a class called Learn with the keys: student, cohort, year. and the values: name, "Foxtrot", and 2022.
+  // Essentially, we just built a new object using the class Learn to construct it, passing in the value of "George" into the key of student in the new object.  
+  // So when we console log learnStudent.. it prints the information about the object we named 'learnStudent'.
 
 // b) Verify and explain:
+// output: Learn { student: 'George', cohort: 'Foxtrot', year: 2022 }
+
+// I was correct in this.. since we created teh class.. we can always reuse it to stamp out similar objects using it's blueprint of keys and values. we can continually stamp out as much objects as we want using the same class.. as long as we use the proper syntax.. especially calling on the class making sure its Capitalized! 
