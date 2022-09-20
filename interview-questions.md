@@ -138,8 +138,9 @@ Research and define the following terms to the best of your ability.
     console.log(combined)
     output: [ 1, 3, 5, 2, 4, 6 ]
 
-3. React:
+3. React: Invented by Facebook(Meta) to be component-based and scalable. Components are functions that returns a value of JSX. JSX is a combination of extended JS and HTML.  Invoking the function inside react is called a "component call" = <Component /> . React uses a virtual DOM.  It listens to individual nodes in the DOM and compares the changes, it then refreshes only the elements that changed. 
 
-4. React props:
+4. React props: React props stand for "property" which is a kind of object argument that is inputted into the React component and returns a React element. Its similar to a kind of placeholder to be called on and invoked in the App.js.
 
-5. DOM events:
+5. DOM events: DOM Events are a kind of built in function that registers that specific events have happened and can be triggered by the user interactions such as when a button is clicked or a picture have been loaded, when these events trigger, further methods of manipulation can be added or accessed or triggered. 
+
